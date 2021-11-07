@@ -15,21 +15,19 @@
 
 from __future__ import absolute_import, division, print_function, unicode_literals
 
+import glob
+import logging
+import os
+import platform
+import re
+import subprocess
+import sys
+from argparse import REMAINDER, ArgumentParser, RawTextHelpFormatter
+from binascii import hexlify
 from getpass import getpass
+from os.path import expanduser
 from random import getrandbits
 
-from binascii import hexlify
-
-import sys
-import platform
-import subprocess
-import os
-from os.path import expanduser
-import re
-import glob
-from argparse import ArgumentParser, REMAINDER
-from argparse import RawTextHelpFormatter
-import logging
 import psutil
 
 from utils import CPUinfo
