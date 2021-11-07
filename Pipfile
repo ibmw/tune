@@ -1,0 +1,33 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+tune = {editable = true, path = "."}
+omegaconf = ">=2.1.0dev20"
+hydra-core = ">=1.1.0.dev5"
+torch = "*"
+tensorflow = "*"
+onnxruntime = "*"
+psutil = "*"
+pandas = "*"
+rich = "*"
+transformers = "*"
+multiprocess = "*"
+sympy = "*"
+
+[dev-packages]
+black = "*"
+flake8 = "*"
+flake8-bugbear = "*"
+isort = "*"
+mypy = "*"
+pytest = "*"
+pytest-cov = "*"
+
+[requires]
+python_version = "3.9"
+
+[pipenv]
+allow_prereleases = true
